@@ -2,7 +2,7 @@
 
 <h2>NodeJS & Express & Mongo & ES6</h2>
 
-<h3>Users</h3>
+Users
 - User Authentication
 - Facebook Login
 - Github Login
@@ -10,22 +10,22 @@
 - Log In
 - Log Out
 -----------------------------------
-<h3>Videos</h3>
+Videos
 - Video Upload
 - Video Recording
 - Search Video
 - AJAX Comments
 - View Count
 ----------------------------------
-<h3>Deployment</h3>
+Deployment
 - Heroku
 - S3 Upload
 - Mongo Atlas
 ----------------------------------
-<h3>Theory</h3>
+Theory
 - MVC
 - Routing
 - Templates
 - Models
 - Relationships
-----------------------------------
+
