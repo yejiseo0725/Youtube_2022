@@ -17,5 +17,9 @@
   "homepage": "https://github.com/yejiseo0725/Youtube_2022#readme",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11"
   }
 }
