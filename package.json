@@ -7,7 +7,7 @@
     "url": "git+https://github.com/yejiseo0725/Youtube_2022.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "Yeji Seo",
   "license": "ISC",
