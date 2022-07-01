@@ -9,7 +9,10 @@
     "type": "git",
     "url": "git+https://github.com/yejiseo0725/Youtube_2022.git"
   },
+  // script: 실행하고 싶은 것  
   "scripts": {
+    // babel 을 설치했기 때문에 babel-node 라는 명령어 사용 가능 (최신 문법 코드 사용 가능)
+    // nodemon 설치 후, npm run dev 는 한 번만 실행해 주면 수정이 되어도 알아서 재시작 해준다.
     "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "Yeji Seo",
@@ -18,6 +21,7 @@
     "url": "https://github.com/yejiseo0725/Youtube_2022/issues"
   },
   "homepage": "https://github.com/yejiseo0725/Youtube_2022#readme",
+  // dependencies & devDependencies 는 npm install --save-dev @babel/core 입력 후 생김.
   "dependencies": {
     "express": "^4.17.2"
   },
