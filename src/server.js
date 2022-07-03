@@ -4,8 +4,15 @@ const PORT = 4000;
 
 const app = express();
 
-const handleHome = () => console.log("On my way now");
+const handleHome = (req, res) => {
+  return res.send("I still love you.");
+};
+const handleLogin = (req, res) => {
+  return res.send("Login here :3");
+};
+
 app.get("/", handleHome);
+app.get("/login", handleLogin);
 // app, request get, root, callback function 의 구조
 
 // app.get("/", () => console.log("trying to go home"));
