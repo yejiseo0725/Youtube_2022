@@ -4,6 +4,12 @@ const PORT = 4000;
 
 const app = express();
 
+const handleHome = () => console.log("On my way now");
+app.get("/", handleHome);
+// app, request get, root, callback function 의 구조
+
+// app.get("/", () => console.log("trying to go home"));
+
 // const handleListening = () => console.log("Server listening on port 4000");
 // app.listen(4000, handleListening);
 
