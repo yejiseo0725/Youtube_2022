@@ -4,15 +4,17 @@ const PORT = 4000;
 
 const app = express();
 
-const gossipMiddleware = (req, res, next) => {
-  console.log(`Someone is trying to go to: ${req.url} now.`);
+const logger = (req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  // method 를 출력하면, get 이 출력된다. (방식)
   next();
 };
+
 const handleHome = (req, res) => {
   return res.send("I love middlewares :3");
 };
 
-app.get("/", gossipMiddleware, handleHome);
+app.get("/", logger, handleHome);
 // app, request get, root, callback function 의 구조
 
 // app.get("/", () => console.log("trying to go home"));
