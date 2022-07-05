@@ -1,33 +1,22 @@
 import express from "express";
+import logger from "morgan";
 
 const PORT = 4000;
 
 const app = express();
 
-// const logger = (req, res, next) => {
-//   console.log(`${req.method} ${req.url}`);
-//   // method 를 출력하면, get 이 출력된다. (방식)
-//   next();
-// };
-
-const routerLogger = (req, res, next) => {
-  console.log(req.path); // 위치 === url
-  next();
-};
-
-const methodLogger = (req, res, next) => {
-  console.log(req.method); // get, post 등의 방식
-  next();
-};
-
-const handleHome = (req, res) => {
+const home = (req, res) => {
+  console.log("I will respond.");
   return res.send("<h1>Hello!!!</h1>");
 };
 
-app.get("/", methodLogger, routerLogger, handleHome);
-// app, request get, root, callback function 의 구조
+const login = (req, res) => {
+  return res.send("login");
+};
 
-// app.get("/", () => console.log("trying to go home"));
+app.use(logger(""));
+app.get("/", home);
+app.get("/login", login);
 
 const handleListening = () => console.log("Server listening on port 4000");
 
