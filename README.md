@@ -50,8 +50,12 @@ Theory
 /login : Login
 /search : Search
 
+<!-- user routers -->
+
 /users/edit : Edit user
 /users/delete : Delete user
+
+<!-- video routers -->
 
 /videos/watch : Watch Video
 /videos/edit : Edit Video
